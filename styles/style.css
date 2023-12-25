@@ -1,0 +1,48 @@
+@import url("./question.css");
+@import url("./response.css");
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.section {
+  height: 1255px;
+  padding: 115px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.js-section_disabled {
+  display: none;
+}
+.title {
+  margin-bottom: 66px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+}
+.subtitle {
+  margin-bottom: 94px;
+  font-size: 40px;
+  line-height: normal;
+}
+.button {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 135px 11px;
+  background-color: #0094ff;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.button:hover {
+  opacity: 0.6;
+}
+.button:active {
+  opacity: 1;
+  box-shadow: 0 0 2px 1px #0094ff;
+  text-shadow: 0 0 2px #fff;
+}
