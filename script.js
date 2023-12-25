@@ -7,7 +7,7 @@ const sectionResponseNode = document.querySelector(".response");
 const sectionNode = document.querySelector(".section");
 
 function getActivity() {
-  fetch("http://www.boredapi.com/api/activity/")
+  fetch("https://www.boredapi.com/api/activity/")
     .then((response) => response.json())
     .then((data) => {
       activityNode.innerHTML = data.activity;
@@ -17,6 +17,8 @@ function getActivity() {
 goButtonQuestionNode.addEventListener("click", function () {
   sectionQuestionNode.classList.add("js-section_disabled");
   sectionResponseNode.classList.remove("js-section_disabled");
-  getActivity();
-  goButtonResponseNode.addEventListener("click", getActivity);
 });
+
+getActivity();
+
+goButtonResponseNode.addEventListener("click", getActivity);
